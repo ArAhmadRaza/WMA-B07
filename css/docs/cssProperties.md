@@ -19,9 +19,10 @@ CSS selectors are powerful tools for targeting elements in your HTML document an
     - Example: `nav div ul { list-style: none; }` (removes list style from `ul` elements nested within `nav div`)
 * **Child Selector:** Targets direct children of an element.
     - Example: `section > article { border: 1px solid #ccc; }` (styles direct `article` children of `section`)
-* **Sibling Selector:** Targets elements next to each other.
+* **Sibling Selector:** Targets only one element next to each other.
     - Example: `h2 + p { font-weight: bold; }` (styles the `p` element that follows an `h2` sibling)
-
+* **Adjacent Sibling Selectors:** Target all elements next to each other.
+   - Example: `h2 ~ p{ font-weight: bold; }`   (styles all the `p` elements that an `h2` siblings)
 ## Attribute Selectors
 
 * **Attribute Existence Selector:** Selects elements with a specific attribute.
